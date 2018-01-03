@@ -1,0 +1,472 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+#block {
+	width: 30px;
+	position: fixed;
+	height: 10000px;
+	background-color: #666666;
+	z-index: -1;
+	top: 0px;
+	border-right: 3px solid #FFFFFF;
+	-webkit-box-shadow: 5px 0px #555555;
+	box-shadow: 5px 0px #555555;
+}
+/*------------------ NAV BAR ----------------*/
+/*----- Menu Outline -----*/
+.navBar-wrap {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	box-shadow: 0px 1px 3px #555555;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+	top: 0px;
+	-webkit-box-shadow: 0px 1px 3px #555555;
+	text-transform: uppercase;
+}
+.navBar {
+	width: 900px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: auto;
+	padding-left: auto;
+}
+.navBar li {
+	margin: 0px;
+	list-style: none;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-decoration: none;
+}
+.navBar a {
+	transition: all linear 0.15s;
+	color: #4B4B4B;
+	text-decoration: none;
+}
+.navBar li:hover > a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/*----- Top Level -----*/
+.navBar > ul > li {
+	float: left;
+	display: inline-block;
+	position: relative;
+	font-size: 15px;
+	width: 150px;
+}
+.navBar > ul > li > a {
+	display: inline-block;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+}
+.navBar > ul > li:hover > a {
+	background: #2e2728;
+}
+/*----- Bottom Level -----*/
+.navBar li:hover .subIssues {
+	z-index: 10;
+	opacity: 1;
+	display: inline;
+}
+.subIssues {
+	padding: 5px 0px;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	z-index: 0;
+	opacity: 0;
+	transition: opacity linear 0.15s;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+	background: #2e2728;
+	width: 125%;
+	display: none;
+}
+.subIssues li {
+	display: block;
+	font-size: 16px;
+	background-color: #FFFFFFF;
+}
+.subIssues li a {
+	padding: 10px 30px;
+	display: block;
+	text-align: left;
+	color: #939393;
+}
+.subIssues li a:hover {
+}
+/*------------------ First Page Intro ----------------*/
+#intro {
+	background-image: url(../images/flag1.jpg);
+	width: 100%;
+	background-size: 100% 100%;
+	height: 91vh;
+	margin-top: 40px;
+}
+#introoverlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(71,71,71,0.90);
+}
+#introtext {
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	width: 80%;
+	font-size: 60pt;
+	color: rgba(255,255,255,1.00);
+	letter-spacing: 10px;
+	font-style: normal;
+	word-spacing: 5px;
+	font-weight: normal;
+	margin-right: auto;
+	position: static;
+	margin-left: auto;
+	padding-top: 149px;
+}
+/*------------------ Issues ----------------*/
+/*---------- All Issues ----------*/
+h1 {
+	background-color: rgba(207,207,207,0.00);
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 15px;
+	font-size: 60pt;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+}
+.issueContainer {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+}
+.issue {
+	color: #FFFFFF;
+	background-color: #373737;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 11pt;
+	text-align: justify;
+	padding-top: 15px;
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-bottom: 15px;
+}
+.issue h2 {
+	color: #FFFFFF;
+	font-size: 34pt;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.subSubIssue > ul {
+	background-color: #2E2E2E;
+	font-size: 11pt;
+	text-align: justify;
+	-webkit-box-shadow: inset 0px 2px 5px #232323;
+	box-shadow: inset 0px 2px 5px #232323;
+	padding-top: 15px;
+	padding-right: 70px;
+	padding-left: 90px;
+	padding-bottom: 15px;
+	color: #FFFFFF;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	list-style-type: cjk-decimal;
+}
+/*---------- Conservatives ----------*/
+
+#conserveContainer {
+	background-color: #175AC4;
+	width: 100%;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+}
+#conserve {
+}
+.subConserve {
+}
+/*---------- Liberals ----------*/
+
+#liberalContainer {
+	width: auto;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #C21626;
+}
+#liberal {
+}
+.subLiberal {
+}
+/*---------- NDPs ----------*/
+
+
+#ndpContainer {
+	width: auto;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #ef6d3b;
+}
+#ndp {
+}
+.subNdp {
+}
+/*---------- Greens ----------*/
+
+#greenContainer {
+	width: auto;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #259b24;
+}
+#green {
+}
+.subGreen {
+}
+/*---------- My Perspective ----------*/
+
+#myViewContainer {
+	width: auto;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #2e2728;
+}
+#myView {
+}
+.subMyView {
+}
+/*------------------ My Riding ----------------*/
+
+#myRiding {
+	color: rgba(88,88,88,1.00);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+	font-size: 20pt;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#myRiding h2 {
+	color: rgba(88,88,88,1.00);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+	font-size: 20pt;
+	float: none;
+	padding-top: 10px;
+	margin-bottom: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-bottom: 10px;
+}
+#myRiding table {
+	position: fixed;
+	top: 110px;
+	overflow-y: scroll;
+	left: 5%;
+}
+#myRiding table h3 {
+	font-size: 20pt;
+}
+#myRiding table h4 {
+	padding-bottom: 10px;
+	font-size: 15pt;
+}
+#myRiding table tbody tr td {
+	padding-top: 4px;
+	transition: all 0.5s ease-in-out;
+}
+.tabletext {
+	font-size: 12pt;
+}
+#myRiding table tbody tr td > img {
+	width: 10vh;
+	transition: all linear 0.20s;
+	height: 10vh;
+}
+.candidateInfo img {
+	width: 200px;
+	height: 200px;
+}
+#myRiding table tbody tr td img:hover {
+	border-bottom: 5px solid #939393;
+}
+#myRiding table tbody tr td .candidateInfo {
+	display: none;
+	height: auto;
+}
+#myRiding table tbody tr td:hover > .candidateInfo {
+	display: inline-block;
+	height: auto;
+}
+.candidateInfo {
+	position: absolute;
+	float: right;
+	width: 225%;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 12pt;
+	border-top: 3px solid #939393;
+	border-bottom: 3px solid #939393;
+	padding-left: 35px;
+	padding-right: 35px;
+	left: 100%;
+	height: 70vh;
+	top: 32px;
+}
+.candidateInfo p {
+	float: right;
+}
+.candidateInfo img {
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline;
+}
+/*------------------ My Vote ----------------*/
+
+#myVote {
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	border-bottom: 5px double #B10002;
+	border-top: 5px double #B10002;
+	padding-top: 35px;
+	padding-bottom: 90px;
+	margin-bottom: 90px;
+	background-color: #FFFFFF;
+	width: 80vw;
+}
+#myVote img {
+	float: left;
+	margin-right: 25px;
+}
+#myVote h3 {
+	padding-top: 0px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #C43234;
+	font-size: 28pt;
+}
+#myVote p {
+	text-align: justify;
+	color: #2e2728;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+/*------------------ Contact Me ----------------*/
+
+#contactMe h5 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 25pt;
+}
+#contactMe {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 59px;
+	text-align: center;
+}
+.leftSide {
+	float: left;
+	background-color: #939393;
+	margin-left: 100px;
+	width: 379px;
+	height: 221px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 10px;
+	padding-top: 10px;
+}
+.rightSide {
+	float: right;
+	background-color: #939393;
+	width: 503px;
+	margin-right: 90px;
+	padding-top: 10px;
+	margin-left: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 10px;
+	height: 681px;
+}
+/*------------------ Analysis ----------------*/
+
+#analysis {
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	border-bottom: 5px double #555555;
+	border-top: 5px double #555555;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-bottom: 90px;
+	background-color: #FFFFFF;
+	width: 80vw;
+}
+#analysis p {
+	color: #2e2728;
+	text-align: justify;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+#analysis h1 {
+	margin-top: -13px;
+	color: #2e2728;
+}
+/*------------------ Footers ----------------*/
+
+#footer {
+	height: 5vh;
+	width: 100%;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 13pt;
+	color: #0A0A0A;
+	text-align: center;
+	background-color: #C1C1C1;
+	border-top: 3px solid rgba(255,255,255,1.00);
+	line-height: 5vh;
+}
+#footer2 {
+	height: 5vh;
+	width: 100%;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 13pt;
+	color: #0A0A0A;
+	text-align: center;
+	background-color: #C1C1C1;
+	border-top: 3px solid rgba(255,255,255,1.00);
+	line-height: 5vh;
+	position: fixed;
+	bottom: 0px;
+}

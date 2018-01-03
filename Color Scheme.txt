@@ -1,0 +1,13 @@
+White: #FFFFFF
+Nav shadow: #555555
+Dark-reddish Grey: #2e2728
+light Grey shadow: #6B6B6B
+Lighter Grey: #939393
+Pretty Dang Dark Grey: #2E2E2E
+
+
+
+Conservatives: #175AC4
+Liberals:#C21626
+NDP:#ef6d3b
+Green: #259b24
